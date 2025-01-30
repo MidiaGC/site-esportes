@@ -70,6 +70,24 @@
             text-decoration: none;
             margin-top: 1rem;
         }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            height: 50%;
+            transform: translate(-50%, -50%);
+        }
+
     </style>
 </head>
 <body>
@@ -93,7 +111,7 @@
             <h2>São Paulo vence clássico e assume liderança do campeonato</h2>
             <img src="imagens/Sao-Paulo-x-Corinthians-Audiencia-Record.jpg" alt="Jogo de futebol">
             <p>Em partida emocionante, o time da casa venceu o clássico por 3 a 1 e chegou ao topo da tabela...</p>
-            <a href="#" class="read-more">Leia mais</a>
+            <a href="https://www.youtube.com/watch?v=J6DDSsOVaps" class="read-more" onclick="showVideo(event, 'J6DDSsOVaps')">Leia mais</a>
         </article>
 
         <article class="article">
